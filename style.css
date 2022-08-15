@@ -679,6 +679,11 @@ a {
 p {
     font-size: 14px;
 }
+blockquote {
+    color:#364577;
+    font-style: italic;
+
+}
 
 .tight-width-whitespace {
     max-width: 600px;
