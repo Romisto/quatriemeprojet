@@ -317,10 +317,11 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
-    float: right;
+    margin-right: 0;
+    float: left;
     z-index: 1;
 }
+
 
 .nav > li {
     float: left;
@@ -338,6 +339,7 @@ a:hover {
 }
 
 .navbar-toggle {
+    display: none;
     margin: 10px 10px 0 0;
     border: 0px;
 }
@@ -393,11 +395,12 @@ a:hover {
     .nav-center .site-navigation {
         position: relative;
         width: 100%;
-        right: 0;
-        margin-right: 0px;
+        left: 0;
+        margin-right: 100px;
         margin-top: 20px;
     }
     .nav-center.mini-nav .navbar-toggle {
+        display: none;
         float: none;
         margin: 10px auto 0;
     }
@@ -861,13 +864,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -973,7 +976,7 @@ h4 {
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }
+     }
     .navbar-brand img {
         max-height: 40px;
         width: auto;
